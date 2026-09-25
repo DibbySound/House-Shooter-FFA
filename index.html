@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>House Shooter FFA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU / LOBBY -->
+    <div id="menu">
+        <h1>House Shooter FFA</h1>
+        <button id="playBtn">Jogar</button>
+        <button id="loadoutBtn">Loadouts / Armas</button>
+        <p>Use WASD para mover, Mouse para mirar</p>
+    </div>
+
+    <!-- MENU LOADOUT -->
+    <div id="loadoutMenu" style="display:none;">
+        <h1>Loadouts</h1>
+        <div id="weaponList"></div>
+        <button id="backBtn">Voltar</button>
+    </div>
+
+
+    <!-- CANVAS DO JOGO -->
+    <canvas id="game" width="800" height="600" style="display:none;"></canvas>
+
+    <!-- HUD -->
+    <div id="hud" style="display:none;">
+        <h2 id="score">Pontuação: 0</h2>
+        <h3 id="ammo">Munição: ∞</h3>
+        <button id="pauseBtn">Pausar</button>
+        <button id="menuBtn" style="display:none;">Voltar ao Menu</button>
+    </div>
+
+    <script src="loadouts/weapons.js"></script>
+    <script src="game.js"></script>
+    <script src="loadouts/loadoutMenu.js"></script>
+    <!-- Primeiro armas / loadouts -->
+
+
+</body>
+
+</html>

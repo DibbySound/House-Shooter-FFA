@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background: linear-gradient(to top, #0b0c1c, #1a1a3b);
+    color: #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#loadoutMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#weaponList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: auto;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #00ff88;
+}
+
+#menu button {
+    background: #111;
+    color: #00ff88;
+    border: 2px solid #00ff88;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.2s;
+}
+
+#menu button:hover {
+    background: #00ff88;
+    color: #111;
+}
+
+canvas {
+    border: 3px solid #00ff88;
+    background: #1a1a3b;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
